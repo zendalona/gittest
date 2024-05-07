@@ -8,3 +8,8 @@ for item in client.list_synthesis_voices():
     if(item[1] not in languages):
         languages.append(item[1])
 
+# Printing all the languages 
+print(languages)
+
+# Closing the SSIP connection
+client.close()
